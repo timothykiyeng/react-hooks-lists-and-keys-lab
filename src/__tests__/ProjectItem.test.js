@@ -8,7 +8,6 @@ const project = {
   about: "A recipe tracking app",
   technologies: ["Rails", "Bootstrap CSS"],
 };
-
 test("each <span> element has a unique key prop", () => {
   let errorSpy = jest.spyOn(global.console, "error");
   render(
