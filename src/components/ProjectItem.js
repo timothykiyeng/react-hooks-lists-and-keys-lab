@@ -1,12 +1,11 @@
 import React from "react";
+//wimport user from "../data/user";
 
 function ProjectItem({ name, about, technologies }) {
   console.log(technologies);
 
-  // const technologyArray = technologies.map((technology) =>
-  //    <span>{technology}</span>
-
-  // )
+  const tech=technologies.map((tech)=>{
+    return <span key={tech}>{tech}</span>})
 
   return (
     <div className="project-item">
@@ -16,7 +15,8 @@ function ProjectItem({ name, about, technologies }) {
       <div className="technologies">
         {/* render a <span> for each technology in the technologies array */}
 
-        <span>{technologies}</span>
+       <span> {tech} </span>
+        
       </div>
     </div>
   );
